@@ -1,6 +1,0 @@
-SCId,Username,Password,FirstName,LastName,Faculty,EmailAddress,Gender,PhoneNo
-101,creator1,pwd101,Alice,Smith,Science,alice@sd.taylors.edu.my,Female,123-456-7890
-102,creator2,pwd102,Bob,Johnson,Arts,bob@sd.taylors.edu.my,Male,234-567-8901
-103,creator3,pwd103,Charlie,Williams,Engineering,charlie@sd.taylors.edu.my,Male,345-678-9012
-104,creator4,pwd104,Mike,Min,IT,Mike@sd.taylors.edu.my,Male,562-017-8437
-105,creator5,pwd105,Charliens,Tee,AI,Charliens@sd.taylors.edu.my,Female,011-489-9341
