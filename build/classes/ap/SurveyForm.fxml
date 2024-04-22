@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ap.SurveyFormController">
+   <children>
+      <Label layoutX="314.0" layoutY="14.0" text="SurveyForm">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="SurveyForm" layoutX="17.0" layoutY="54.0" prefHeight="440.0" prefWidth="775.0">
+        <columns>
+          <TableColumn fx:id="SurveyId" prefWidth="180.0" text="SurveyId" />
+          <TableColumn fx:id="SurveyTitle" prefWidth="180.0" text="SurveyTitle" />
+            <TableColumn fx:id="Id" prefWidth="180.0" text="Id" />
+            <TableColumn fx:id="CreatorName" prefWidth="235.0" text="CreatorName" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

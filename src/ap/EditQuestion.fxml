@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="EditQuestion" prefHeight="1029.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ap.EditQuestionController">
+   <children>
+      <Button fx:id="Back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeCurrentPage" prefHeight="25.0" prefWidth="50.0" text="Back">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="25.0" layoutX="175.0" layoutY="14.0" startX="-100.0" />
+      <Label layoutX="84.0" layoutY="14.0" prefHeight="25.0" prefWidth="139.0" text="Editorial Questionnaire">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="609.0" endY="-7.62939453125E-6" layoutX="116.0" layoutY="49.0" startX="-100.0" />
+      <Label layoutX="20.0" layoutY="62.0" prefHeight="25.0" prefWidth="118.0" text="Basic Information">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="100.0" text="Questionnaire Title">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Title" layoutX="20.0" layoutY="130.0" onAction="#QuestionnaireTitle" />
+      <Label layoutX="255.0" layoutY="100.0" text="Type of Questionnaire">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="Type" layoutX="255.0" layoutY="130.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="161.0" text="Please Choose">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Anoymity" />
+          <MenuItem mnemonicParsing="false" text="Non-anoymity" />
+        </items>
+      </MenuButton>
+      <Label layoutX="506.0" layoutY="100.0" prefWidth="75.0" text="Cut-off Time">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Deadline" editable="false" layoutX="506.0" layoutY="130.0" onAction="#Deadline" />
+      <Label layoutX="20.0" layoutY="180.0" text="Description of the questionnaire">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Text" layoutX="20.0" layoutY="206.0" prefHeight="81.0" prefWidth="181.0" />
+      <Line endX="609.0" endY="-7.62939453125E-6" layoutX="116.0" layoutY="300.0" startX="-100.0" />
+      <Line endX="609.0" endY="-7.62939453125E-6" layoutX="116.0" layoutY="314.0" startX="-100.0" />
+      <Button fx:id="Submit" layoutX="252.0" layoutY="964.0" mnemonicParsing="false" onAction="#SubmitCurrentPage" style="-fx-background-color: #2e71d6;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Storage" layoutX="360.0" layoutY="964.0" mnemonicParsing="false" text="Temporary Storage">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="252.0" layoutY="180.0" text="Questionnaire Code">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="506.0" layoutY="180.0" text="Creation Time">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Code" layoutX="255.0" layoutY="220.0" onAction="#QuestionnaireCode" />
+      <DatePicker fx:id="CreationTime" layoutX="507.0" layoutY="220.0" onAction="#CreationTime" />
+      <VBox fx:id="Editorial" layoutX="19.0" layoutY="323.0" prefHeight="632.0" prefWidth="703.0" />
+   </children>
+</AnchorPane>
