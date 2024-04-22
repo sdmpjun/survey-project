@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="CompleteQuestion" prefHeight="520.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ap.CompleteQuestionController">
+   <children>
+      <TextArea editable="false" layoutX="160.0" layoutY="160.0" prefHeight="200.0" prefWidth="430.0" text="Dear Users:&#10;&#10;       Thank you for completing the questionnaire.&#10;&#10;       You're already responded!&#10;&#10;       We have received your application and will get back to you soon.">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="14.0" layoutY="14.0" text="Complete the Questionnaire">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

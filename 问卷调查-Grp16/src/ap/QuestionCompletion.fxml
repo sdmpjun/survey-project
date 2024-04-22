@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="QuestionCompletion" prefHeight="964.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ap.QuestionCompletionController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Questionnaire Completion">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="15.0" layoutY="80.0" prefHeight="181.0" prefWidth="711.0" text="Dear Users:&#10;&#10;       Hello! Thank you for your long-term support and cooperation with our company! In order to better and faster transfer of information between the two sides, improve the convenience of the system and the practicality of the operation, to achieve the real benefit of both sides of the purpose, the special system to carry out the use of satisfaction survey activities. We look forward to your valuable comments and suggestions, please fill out this questionnaire in your busy real and objective, every opinion you put forward will become the direction of our improvement, here we express our sincere thanks!&#10;&#10;       You fill in any content, we will be kept confidential." wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </TextArea>
+      <Line endX="609.0" endY="-7.62939453125E-6" layoutX="116.0" layoutY="56.0" startX="-100.0" />
+      <Label layoutX="30.0" layoutY="286.0" prefHeight="25.0" prefWidth="100.0" text="Title Information">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="324.0" text="1.   Question 1:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Question1" layoutX="95.0" layoutY="354.0" prefHeight="66.0" prefWidth="550.0" />
+      <Label layoutX="80.0" layoutY="454.0" text="2.   Question 2:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Question2" layoutX="100.0" layoutY="478.0" prefHeight="23.0" prefWidth="313.0" />
+      <Label layoutX="80.0" layoutY="536.0" text="3.   Question 3:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="Option1" layoutX="100.0" layoutY="569.0" mnemonicParsing="false" text="Option 1">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Option2" layoutX="214.0" layoutY="569.0" mnemonicParsing="false" text="Option 2">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Option3" layoutX="333.0" layoutY="569.0" mnemonicParsing="false" text="Option 3">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Option4" layoutX="451.0" layoutY="569.0" mnemonicParsing="false" text="Option 4">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="80.0" layoutY="632.0" text="4   Question 4:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Yes" layoutX="100.0" layoutY="667.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="Polar" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="No" layoutX="211.0" layoutY="667.0" mnemonicParsing="false" text="No" toggleGroup="$Polar" />
+      <Label layoutX="80.0" layoutY="722.0" text="5   Question 5:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Slider fx:id="Question5" layoutX="100.0" layoutY="752.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="80.0" layoutY="814.0" text="6   Question 6:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Question6" editable="false" layoutX="100.0" layoutY="843.0" />
+      <Button fx:id="Submit" layoutX="252.0" layoutY="915.0" mnemonicParsing="false" onAction="#SubmitCurrentPage" style="-fx-background-color: #2e71d6;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Storage" layoutX="360.0" layoutY="915.0" mnemonicParsing="false" text="Temporary Storage">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
